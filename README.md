@@ -17,3 +17,4 @@ método para guardar en el localstorage el correo, contraseña y la fecha actual
 [ ] 8. Se da libertad en la aplicación de estilos y también se evaluá.
 
 [x] TEST switching between github users in one machine.
+[x] TEST switching between github users in one machine.
