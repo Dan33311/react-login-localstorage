@@ -20,7 +20,7 @@
   flex-direction: row;
   margin-top: 200px;
   background-color: #003f8c;
-  border-radius: 20px;
+  border-radius: 9px;
   font-size: 1.5rem;
 }
 .form-container form { 
@@ -38,7 +38,7 @@
   margin-top: 0;
 }
 .form-container label {
-  width: 400px;
+  width: 330px;
   margin-top: 26px;
 }
 .form-container input {

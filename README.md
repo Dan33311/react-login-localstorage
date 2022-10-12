@@ -16,5 +16,6 @@ método para guardar en el localstorage el correo, contraseña y la fecha actual
 [ ] 7. Colocar un botón de cerrar sesión y el método para cerrar sesión debe ir en el context del usuario.
 [ ] 8. Se da libertad en la aplicación de estilos y también se evaluá.
 
+
 [x] TEST switching between github users in one machine.
 [x] TEST switching between github users in one machine.
