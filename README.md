@@ -4,8 +4,8 @@ El objetivo de la prueba es lograr crear una aplicación que haga una autenticac
 haber una sección de usuario autenticado donde se debe ver un avatar, el correo y el ultimo inicio de
 sesión. Ademas debe haber una opción de cerrar sesión.
 PASOS:
-[ ] 1. Crear una aplicación de react con typescript y sass.
-[ ] 2. Crear formulario de ingreso con los inputs estilizados de correo y contraseña, el valor de estos inputs
+[x] 1. Crear una aplicación de react con typescript y sass.
+[x] 2. Crear formulario de ingreso con los inputs estilizados de correo y contraseña, el valor de estos inputs
 debe controlarse con un estado.
 [ ] 3. Debe usarse react context para administrar el estado global y allí en el context del usuario agregamos el
 método para guardar en el localstorage el correo, contraseña y la fecha actual en la que se autentico.

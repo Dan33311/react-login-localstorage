@@ -1,17 +1,34 @@
+import { useState } from "react";
+
 const Login = () => {
+  
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    setEmail(e.target.email.value)
+    setPassword(e.target.password.value)
+  }   
+
+  console.log('>>>email:', email);
+  console.log('>>>password:', password);
+
   return (
     <>
       <div className="login-container">
         <div className="form-container">
-          <form className="">
+          <form onSubmit={handleSubmit}>
             <h2>Login</h2>
 
             <p>Login here using your username and password.</p>
-            
+
             <label className="" >
               <input
                 type="text"
                 name="email"
+                // onChange={onChangeEmail}
+                autoComplete="off"
                 required='Please fill out this field.' 
                 placeholder="Email address"
                 maxLength="60" 
@@ -21,14 +38,15 @@ const Login = () => {
             <label className="" >
               <input
                 type="password"
-                name="pwd"
-                required='Please fill out this field.' 
+                name="password"
+                // onChange={onChangePassword}
+                // required='Please fill out this field.' 
                 placeholder="Password"
                 maxLength="60"
               />
             </label>
 
-            <button className="form-button">Login</button>
+            <button type="submit" className="form-button">Login</button>
           </form>
         </div>
       </div>
