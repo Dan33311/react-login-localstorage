@@ -19,3 +19,4 @@ método para guardar en el localstorage el correo, contraseña y la fecha actual
 
 [x] TEST switching between github users in one machine.
 [x] TEST switching between github users in one machine.
+[x] TEST 4
