@@ -11,7 +11,7 @@ PASOS:
 [x] 2. Crear formulario de ingreso con los inputs estilizados de correo y contraseña, el valor de estos inputs
 debe controlarse con un estado.
 
-[ ] 3. Debe usarse react context para administrar el estado global y allí en el context del usuario agregamos el
+[x] 3. Debe usarse react context para administrar el estado global y allí en el context del usuario agregamos el
 método para guardar en el localstorage el correo, contraseña y la fecha actual en la que se autentico.
 
 [ ] 4. Cuando recargue la página debe mantenerse la sesión iniciada.

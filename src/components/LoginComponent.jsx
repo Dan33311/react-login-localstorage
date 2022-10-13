@@ -1,36 +1,40 @@
 import { useContext, useState } from "react";
 import FormContext from "../context/FormContext";
+import Swal from "sweetalert2";
 
 const Login = () => {
   
   const actualDate = new Date()
 
   const {
-    loginDate,
     setLoginDate,
-    email,
+    setIsLogin,
     setEmail,
-    password,
-    setPassword
+    setPassword,
   } = useContext(FormContext)
 
-  const handleSubmit = (e, date) => {
+  const handleSubmit = (e) => {
     e.preventDefault()
     setEmail(e.target.email.value)
     setPassword(e.target.password.value)
-    console.log(">actualDate:", actualDate);
-    // if(email && password) {
-      setLoginDate(actualDate)
-    // }
-    console.log('>email:', email);
-    console.log('>password:', password);
-    console.log('>loginDate:', loginDate);
-    // alert('Login success')
+    // console.log(">actualDate:", actualDate);
+    setLoginDate(actualDate)
+    setIsLogin(true)
+
+    // console.log('>email:', email);
+    // console.log('>password:', password);
+    // console.log('>loginDate:', loginDate);
+    Swal.fire({
+      title: 'Success',
+      text: 'Success login',
+      icon: 'success',
+      confirmButtonText: 'Cool'
+    })
   }   
 
-  console.log('>>>email:', email);
-  console.log('>>>password:', password);
-  console.log('>>>loginDate:', loginDate);
+  // console.log('>>>email:', email);
+  // console.log('>>>password:', password);
+  // console.log('>>>loginDate:', loginDate);
 
   return (
     <>
@@ -43,13 +47,13 @@ const Login = () => {
 
             <label className="" >
               <input
-                type="text"
+                type="email"
                 name="email"
                 // onChange={onChangeEmail}
                 autoComplete="off"
                 required='Please fill out this field.' 
                 placeholder="Email address"
-                maxLength="60" 
+                maxLength="30"
               />
             </label>
 
@@ -58,9 +62,10 @@ const Login = () => {
                 type="password"
                 name="password"
                 // onChange={onChangePassword}
-                // required='Please fill out this field.' 
+                required='Please fill out this field.' 
                 placeholder="Password"
-                maxLength="60"
+                maxLength="10"
+                minLength="4"
               />
             </label>
 
