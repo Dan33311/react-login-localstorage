@@ -1,18 +1,36 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
+import FormContext from "../context/FormContext";
 
 const Login = () => {
   
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const actualDate = new Date()
 
-  const handleSubmit = (e) => {
+  const {
+    loginDate,
+    setLoginDate,
+    email,
+    setEmail,
+    password,
+    setPassword
+  } = useContext(FormContext)
+
+  const handleSubmit = (e, date) => {
     e.preventDefault()
     setEmail(e.target.email.value)
     setPassword(e.target.password.value)
+    console.log(">actualDate:", actualDate);
+    // if(email && password) {
+      setLoginDate(actualDate)
+    // }
+    console.log('>email:', email);
+    console.log('>password:', password);
+    console.log('>loginDate:', loginDate);
+    // alert('Login success')
   }   
 
   console.log('>>>email:', email);
   console.log('>>>password:', password);
+  console.log('>>>loginDate:', loginDate);
 
   return (
     <>
