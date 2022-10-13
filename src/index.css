@@ -82,6 +82,7 @@
 .user {
   display: flex;
   align-items: center;
+  /* outline: 1px solid lime; */
 }
 .user h2 {
   margin-top: 82px;
@@ -102,7 +103,7 @@
   width: 150px;
 }
 .user-container .p-email {
-  margin-top: 0;
+  margin-top: -20px;
   font-size: 16px;
 }
 .user-container .p-date {

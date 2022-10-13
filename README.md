@@ -1,3 +1,20 @@
+# React Challenge
+
+## Vite Project
+***
+Project created with Vite
+
+## Installation
+***
+If you want clone this project. 
+```
+$ git clone https://github.com/Dan33311/react-login-localstorage.git
+$ cd ../path/to/the/file
+$ npm install
+$ npm run dev
+```
+
+
 PRUEBA TÉCNICA
 
 El objetivo de la prueba es lograr crear una aplicación que haga una autenticación de un usuario, debe

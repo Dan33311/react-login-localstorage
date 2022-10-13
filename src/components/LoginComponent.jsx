@@ -4,7 +4,7 @@ import FormContext from "../context/FormContext";
 
 const Login = () => {
   
-  const actualDate = new Date()
+  const actualDate = new Date().toString()
   const navigate = useNavigate()
 
   const {
