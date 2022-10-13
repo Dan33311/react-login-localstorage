@@ -1,10 +1,11 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
+import { useNavigate } from "react-router-dom";
 import FormContext from "../context/FormContext";
-import Swal from "sweetalert2";
 
 const Login = () => {
   
   const actualDate = new Date()
+  const navigate = useNavigate()
 
   const {
     setLoginDate,
@@ -20,16 +21,9 @@ const Login = () => {
     // console.log(">actualDate:", actualDate);
     setLoginDate(actualDate)
     setIsLogin(true)
-
-    // console.log('>email:', email);
-    // console.log('>password:', password);
-    // console.log('>loginDate:', loginDate);
-    Swal.fire({
-      title: 'Success',
-      text: 'Success login',
-      icon: 'success',
-      confirmButtonText: 'Cool'
-    })
+    setTimeout(() => {
+      navigate('/user')
+    }, 500)
   }   
 
   // console.log('>>>email:', email);

@@ -14,14 +14,14 @@ debe controlarse con un estado.
 [x] 3. Debe usarse react context para administrar el estado global y allí en el context del usuario agregamos el
 método para guardar en el localstorage el correo, contraseña y la fecha actual en la que se autentico.
 
-[ ] 4. Cuando recargue la página debe mantenerse la sesión iniciada.
+[x] 4. Cuando recargue la página debe mantenerse la sesión iniciada.
 
 [ ] 5. la contraseña y el correo debe validarse con los usuarios que estén en un JSON o en una variable.
 
 [ ] 5. La contraseña debe guardarse encriptada.
 
-[ ] 6. Hacer una tarjeta bien estilizada donde este un avatar, el email y el ultimo inicio de sesión.
+[x] 6. Hacer una tarjeta bien estilizada donde este un avatar, el email y el ultimo inicio de sesión.
 
-[ ] 7. Colocar un botón de cerrar sesión y el método para cerrar sesión debe ir en el context del usuario.
+[x] 7. Colocar un botón de cerrar sesión y el método para cerrar sesión debe ir en el context del usuario.
 
-[ ] 8. Se da libertad en la aplicación de estilos y también se evaluá.
+[x] 8. Se da libertad en la aplicación de estilos y también se evaluá.
